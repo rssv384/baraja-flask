@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/static/estilo.css" />
+    <title>BARAJA - En Juego</title>
+</head>
+<body>
+    <div id="content"><h2>Resultado de juego</h2>
+        <div class="renglon">
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta0 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta1 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta2 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta3 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta4 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta5 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j1.carta6 }}">
+                </div>
+            </div>
+        </div>
+    
+        <div class="renglon">
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta0 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta1 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta2 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta3 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta4 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta5 }}">
+                </div>
+            </div>
+            <div class="columna">
+                <div class="card">
+                  <img src="{{ cartas_j2.carta6 }}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="renglon">
+        <p align="left">{{txtGanador}}</p>
+    </div>
+    <div class="renglon">
+        <p align="center"><a href="/" ><button class=grey style="height:45px;width:100px">Otra vez</button></a></p>
+    </div>
+    <div class="renglon">
+      <h3>Victorias Totales</h3>
+      <div class="columna">
+        <div class="card">
+          <h3>{{win_count["JugadorA"]}}</h3>
+          <p>{{jugador1.nombre}}</p>
+        </div>
+      </div>
+
+      <div class="columna">
+        <div class="card">
+          <h3>{{win_count["JugadorB"]}}</h3>
+          <p>{{jugador2.nombre}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+        &copy; Copyright 2021 por <a href="http://midominio.com/">mi</a>
+    </div>
+</body>
+</html>
